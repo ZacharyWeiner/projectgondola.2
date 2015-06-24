@@ -1,4 +1,5 @@
 ActiveAdmin.register WorkOrderStatus do
+  permit_params :partition_id, :jobstatus, :sub_status, :job_status, :status_date, :reason_code, :reason_code_description
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
