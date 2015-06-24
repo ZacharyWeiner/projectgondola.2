@@ -1,0 +1,81 @@
+<h1>Listing work_orders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Work order uid</th>
+      <th>Work order number</th>
+      <th>Completed</th>
+      <th>Slot start</th>
+      <th>Slot end</th>
+      <th>Priority</th>
+      <th>Technician</th>
+      <th>Tech login</th>
+      <th>Previous fsr login</th>
+      <th>Job</th>
+      <th>Dwelling type</th>
+      <th>Job type</th>
+      <th>Job class</th>
+      <th>Requirements list</th>
+      <th>Privilege list</th>
+      <th>Routing area code</th>
+      <th>Routing area</th>
+      <th>Account number</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Home phone</th>
+      <th>Call ahead number</th>
+      <th>Customer</th>
+      <th>Cod amount</th>
+      <th>Drop type</th>
+      <th>Processing code</th>
+      <th>Service code</th>
+      <th>Equipment type</th>
+      <th>Equipment serial number</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @work_orders.each do |work_order| %>
+      <tr>
+        <td><%= work_order.work_order_uid %></td>
+        <td><%= work_order.work_order_number %></td>
+        <td><%= work_order.completed %></td>
+        <td><%= work_order.slot_start %></td>
+        <td><%= work_order.slot_end %></td>
+        <td><%= work_order.priority %></td>
+        <td><%= work_order.technician %></td>
+        <td><%= work_order.tech_login_id %></td>
+        <td><%= work_order.previous_fsr_login_id %></td>
+        <td><%= work_order.job_id %></td>
+        <td><%= work_order.dwelling_type %></td>
+        <td><%= work_order.job_type %></td>
+        <td><%= work_order.job_class %></td>
+        <td><%= work_order.requirements_list %></td>
+        <td><%= work_order.privilege_list %></td>
+        <td><%= work_order.routing_area_code %></td>
+        <td><%= work_order.routing_area %></td>
+        <td><%= work_order.account_number %></td>
+        <td><%= work_order.first_name %></td>
+        <td><%= work_order.last_name %></td>
+        <td><%= work_order.home_phone %></td>
+        <td><%= work_order.call_ahead_number %></td>
+        <td><%= work_order.customer_id %></td>
+        <td><%= work_order.cod_amount %></td>
+        <td><%= work_order.drop_type %></td>
+        <td><%= work_order.processing_code %></td>
+        <td><%= work_order.service_code %></td>
+        <td><%= work_order.equipment_type %></td>
+        <td><%= work_order.equipment_serial_number %></td>
+        <td><%= link_to 'Show', work_order %></td>
+        <td><%= link_to 'Edit', edit_work_order_path(work_order) %></td>
+        <td><%= link_to 'Destroy', work_order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Work order', new_work_order_path %>

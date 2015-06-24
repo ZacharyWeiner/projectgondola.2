@@ -1,0 +1,149 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Work order uid:</strong>
+  <%= @work_order.work_order_uid %>
+</p>
+
+<p>
+  <strong>Work order number:</strong>
+  <%= @work_order.work_order_number %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @work_order.completed %>
+</p>
+
+<p>
+  <strong>Slot start:</strong>
+  <%= @work_order.slot_start %>
+</p>
+
+<p>
+  <strong>Slot end:</strong>
+  <%= @work_order.slot_end %>
+</p>
+
+<p>
+  <strong>Priority:</strong>
+  <%= @work_order.priority %>
+</p>
+
+<p>
+  <strong>Technician:</strong>
+  <%= @work_order.technician %>
+</p>
+
+<p>
+  <strong>Tech login:</strong>
+  <%= @work_order.tech_login_id %>
+</p>
+
+<p>
+  <strong>Previous fsr login:</strong>
+  <%= @work_order.previous_fsr_login_id %>
+</p>
+
+<p>
+  <strong>Job:</strong>
+  <%= @work_order.job_id %>
+</p>
+
+<p>
+  <strong>Dwelling type:</strong>
+  <%= @work_order.dwelling_type %>
+</p>
+
+<p>
+  <strong>Job type:</strong>
+  <%= @work_order.job_type %>
+</p>
+
+<p>
+  <strong>Job class:</strong>
+  <%= @work_order.job_class %>
+</p>
+
+<p>
+  <strong>Requirements list:</strong>
+  <%= @work_order.requirements_list %>
+</p>
+
+<p>
+  <strong>Privilege list:</strong>
+  <%= @work_order.privilege_list %>
+</p>
+
+<p>
+  <strong>Routing area code:</strong>
+  <%= @work_order.routing_area_code %>
+</p>
+
+<p>
+  <strong>Routing area:</strong>
+  <%= @work_order.routing_area %>
+</p>
+
+<p>
+  <strong>Account number:</strong>
+  <%= @work_order.account_number %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @work_order.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @work_order.last_name %>
+</p>
+
+<p>
+  <strong>Home phone:</strong>
+  <%= @work_order.home_phone %>
+</p>
+
+<p>
+  <strong>Call ahead number:</strong>
+  <%= @work_order.call_ahead_number %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @work_order.customer_id %>
+</p>
+
+<p>
+  <strong>Cod amount:</strong>
+  <%= @work_order.cod_amount %>
+</p>
+
+<p>
+  <strong>Drop type:</strong>
+  <%= @work_order.drop_type %>
+</p>
+
+<p>
+  <strong>Processing code:</strong>
+  <%= @work_order.processing_code %>
+</p>
+
+<p>
+  <strong>Service code:</strong>
+  <%= @work_order.service_code %>
+</p>
+
+<p>
+  <strong>Equipment type:</strong>
+  <%= @work_order.equipment_type %>
+</p>
+
+<p>
+  <strong>Equipment serial number:</strong>
+  <%= @work_order.equipment_serial_number %>
+</p>
+
+<%= link_to 'Edit', edit_work_order_path(@work_order) %> |
+<%= link_to 'Back', work_orders_path %>

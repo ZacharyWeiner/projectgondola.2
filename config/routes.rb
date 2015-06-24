@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :work_orders
+
   resources :addresses
 
   resources :drivers_licesnses
