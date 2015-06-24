@@ -1,0 +1,45 @@
+<h1>Listing vehicle_infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Registration state</th>
+      <th>Color</th>
+      <th>Plate</th>
+      <th>Registration</th>
+      <th>Registration expiration</th>
+      <th>Insurance company</th>
+      <th>Insurance company</th>
+      <th>Company info</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vehicle_infos.each do |vehicle_info| %>
+      <tr>
+        <td><%= vehicle_info.year %></td>
+        <td><%= vehicle_info.make %></td>
+        <td><%= vehicle_info.model %></td>
+        <td><%= vehicle_info.registration_state %></td>
+        <td><%= vehicle_info.color %></td>
+        <td><%= vehicle_info.plate %></td>
+        <td><%= vehicle_info.registration_id %></td>
+        <td><%= vehicle_info.registration_expiration %></td>
+        <td><%= vehicle_info.insurance_company %></td>
+        <td><%= vehicle_info.insurance_company %></td>
+        <td><%= vehicle_info.company_info %></td>
+        <td><%= link_to 'Show', vehicle_info %></td>
+        <td><%= link_to 'Edit', edit_vehicle_info_path(vehicle_info) %></td>
+        <td><%= link_to 'Destroy', vehicle_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vehicle info', new_vehicle_info_path %>

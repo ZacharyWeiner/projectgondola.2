@@ -1,0 +1,2 @@
+module VehicleInfosHelper
+end

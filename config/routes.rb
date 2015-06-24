@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :vehicle_infos
+
   resources :work_order_times
 
   devise_for :admin_users, ActiveAdmin::Devise.config

@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @vehicle_info.year %>
+</p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @vehicle_info.make %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @vehicle_info.model %>
+</p>
+
+<p>
+  <strong>Registration state:</strong>
+  <%= @vehicle_info.registration_state %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @vehicle_info.color %>
+</p>
+
+<p>
+  <strong>Plate:</strong>
+  <%= @vehicle_info.plate %>
+</p>
+
+<p>
+  <strong>Registration:</strong>
+  <%= @vehicle_info.registration_id %>
+</p>
+
+<p>
+  <strong>Registration expiration:</strong>
+  <%= @vehicle_info.registration_expiration %>
+</p>
+
+<p>
+  <strong>Insurance company:</strong>
+  <%= @vehicle_info.insurance_company %>
+</p>
+
+<p>
+  <strong>Insurance company:</strong>
+  <%= @vehicle_info.insurance_company %>
+</p>
+
+<p>
+  <strong>Company info:</strong>
+  <%= @vehicle_info.company_info %>
+</p>
+
+<%= link_to 'Edit', edit_vehicle_info_path(@vehicle_info) %> |
+<%= link_to 'Back', vehicle_infos_path %>
