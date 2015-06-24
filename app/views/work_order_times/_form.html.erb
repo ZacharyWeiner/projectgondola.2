@@ -1,0 +1,23 @@
+<%= simple_form_for(@work_order_time) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :esitmated_job_duration %>
+    <%= f.input :estimated_travel_time %>
+    <%= f.input :estimated_wrap_up_duration %>
+    <%= f.input :estimated_start %>
+    <%= f.input :estimated_wrapup %>
+    <%= f.input :actual_job_duration %>
+    <%= f.input :actual_travel_duration %>
+    <%= f.input :actual_wrap_up_duration %>
+    <%= f.input :actual_end_time %>
+    <%= f.input :actual_start_time %>
+    <%= f.input :actual_completed_time %>
+    <%= f.input :standard_job_duration %>
+    <%= f.association :work_order %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

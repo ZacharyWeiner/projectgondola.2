@@ -1,0 +1,49 @@
+<h1>Listing work_order_times</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Esitmated job duration</th>
+      <th>Estimated travel time</th>
+      <th>Estimated wrap up duration</th>
+      <th>Estimated start</th>
+      <th>Estimated wrapup</th>
+      <th>Actual job duration</th>
+      <th>Actual travel duration</th>
+      <th>Actual wrap up duration</th>
+      <th>Actual end time</th>
+      <th>Actual start time</th>
+      <th>Actual completed time</th>
+      <th>Standard job duration</th>
+      <th>Work order</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @work_order_times.each do |work_order_time| %>
+      <tr>
+        <td><%= work_order_time.esitmated_job_duration %></td>
+        <td><%= work_order_time.estimated_travel_time %></td>
+        <td><%= work_order_time.estimated_wrap_up_duration %></td>
+        <td><%= work_order_time.estimated_start %></td>
+        <td><%= work_order_time.estimated_wrapup %></td>
+        <td><%= work_order_time.actual_job_duration %></td>
+        <td><%= work_order_time.actual_travel_duration %></td>
+        <td><%= work_order_time.actual_wrap_up_duration %></td>
+        <td><%= work_order_time.actual_end_time %></td>
+        <td><%= work_order_time.actual_start_time %></td>
+        <td><%= work_order_time.actual_completed_time %></td>
+        <td><%= work_order_time.standard_job_duration %></td>
+        <td><%= work_order_time.work_order %></td>
+        <td><%= link_to 'Show', work_order_time %></td>
+        <td><%= link_to 'Edit', edit_work_order_time_path(work_order_time) %></td>
+        <td><%= link_to 'Destroy', work_order_time, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Work order time', new_work_order_time_path %>

@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Esitmated job duration:</strong>
+  <%= @work_order_time.esitmated_job_duration %>
+</p>
+
+<p>
+  <strong>Estimated travel time:</strong>
+  <%= @work_order_time.estimated_travel_time %>
+</p>
+
+<p>
+  <strong>Estimated wrap up duration:</strong>
+  <%= @work_order_time.estimated_wrap_up_duration %>
+</p>
+
+<p>
+  <strong>Estimated start:</strong>
+  <%= @work_order_time.estimated_start %>
+</p>
+
+<p>
+  <strong>Estimated wrapup:</strong>
+  <%= @work_order_time.estimated_wrapup %>
+</p>
+
+<p>
+  <strong>Actual job duration:</strong>
+  <%= @work_order_time.actual_job_duration %>
+</p>
+
+<p>
+  <strong>Actual travel duration:</strong>
+  <%= @work_order_time.actual_travel_duration %>
+</p>
+
+<p>
+  <strong>Actual wrap up duration:</strong>
+  <%= @work_order_time.actual_wrap_up_duration %>
+</p>
+
+<p>
+  <strong>Actual end time:</strong>
+  <%= @work_order_time.actual_end_time %>
+</p>
+
+<p>
+  <strong>Actual start time:</strong>
+  <%= @work_order_time.actual_start_time %>
+</p>
+
+<p>
+  <strong>Actual completed time:</strong>
+  <%= @work_order_time.actual_completed_time %>
+</p>
+
+<p>
+  <strong>Standard job duration:</strong>
+  <%= @work_order_time.standard_job_duration %>
+</p>
+
+<p>
+  <strong>Work order:</strong>
+  <%= @work_order_time.work_order %>
+</p>
+
+<%= link_to 'Edit', edit_work_order_time_path(@work_order_time) %> |
+<%= link_to 'Back', work_order_times_path %>
