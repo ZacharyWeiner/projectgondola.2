@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Street number:</strong>
+  <%= @address.street_number %>
+</p>
+
+<p>
+  <strong>Street name:</strong>
+  <%= @address.street_name %>
+</p>
+
+<p>
+  <strong>Unit:</strong>
+  <%= @address.unit %>
+</p>
+
+<p>
+  <strong>Address type:</strong>
+  <%= @address.address_type %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @address.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @address.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @address.zip %>
+</p>
+
+<p>
+  <strong>Full street address:</strong>
+  <%= @address.full_street_address %>
+</p>
+
+<p>
+  <strong>Map grid:</strong>
+  <%= @address.map_grid %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @address.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @address.longitude %>
+</p>
+
+<p>
+  <strong>Company info:</strong>
+  <%= @address.company_info %>
+</p>
+
+<p>
+  <strong>Emergency contact:</strong>
+  <%= @address.emergency_contact %>
+</p>
+
+<p>
+  <strong>Work order:</strong>
+  <%= @address.work_order %>
+</p>
+
+<%= link_to 'Edit', edit_address_path(@address) %> |
+<%= link_to 'Back', addresses_path %>

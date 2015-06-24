@@ -1,0 +1,24 @@
+<%= simple_form_for(@address) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :street_number %>
+    <%= f.input :street_name %>
+    <%= f.input :unit %>
+    <%= f.input :address_type %>
+    <%= f.input :city %>
+    <%= f.input :state %>
+    <%= f.input :zip %>
+    <%= f.input :full_street_address %>
+    <%= f.input :map_grid %>
+    <%= f.input :latitude %>
+    <%= f.input :longitude %>
+    <%= f.association :company_info %>
+    <%= f.association :emergency_contact %>
+    <%= f.association :work_order %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
