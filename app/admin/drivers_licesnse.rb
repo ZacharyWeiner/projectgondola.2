@@ -1,4 +1,5 @@
 ActiveAdmin.register DriversLicesnse do
+  permit_params :license_id, :height, :weight, :eye_color, :birthday, :hair_color, :state, :expiration
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
