@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :work_order_statuses
+
   resources :vehicle_infos
 
   resources :work_order_times

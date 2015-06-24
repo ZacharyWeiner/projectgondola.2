@@ -1,0 +1,39 @@
+<h1>Listing work_order_statuses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Partition</th>
+      <th>Jobstatus</th>
+      <th>Sub status</th>
+      <th>Job status</th>
+      <th>Status date</th>
+      <th>Reason code</th>
+      <th>Reason code description</th>
+      <th>Work order</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @work_order_statuses.each do |work_order_status| %>
+      <tr>
+        <td><%= work_order_status.partition_id %></td>
+        <td><%= work_order_status.jobstatus %></td>
+        <td><%= work_order_status.sub_status %></td>
+        <td><%= work_order_status.job_status %></td>
+        <td><%= work_order_status.status_date %></td>
+        <td><%= work_order_status.reason_code %></td>
+        <td><%= work_order_status.reason_code_description %></td>
+        <td><%= work_order_status.work_order %></td>
+        <td><%= link_to 'Show', work_order_status %></td>
+        <td><%= link_to 'Edit', edit_work_order_status_path(work_order_status) %></td>
+        <td><%= link_to 'Destroy', work_order_status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Work order status', new_work_order_status_path %>

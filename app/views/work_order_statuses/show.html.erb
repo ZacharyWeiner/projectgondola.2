@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Partition:</strong>
+  <%= @work_order_status.partition_id %>
+</p>
+
+<p>
+  <strong>Jobstatus:</strong>
+  <%= @work_order_status.jobstatus %>
+</p>
+
+<p>
+  <strong>Sub status:</strong>
+  <%= @work_order_status.sub_status %>
+</p>
+
+<p>
+  <strong>Job status:</strong>
+  <%= @work_order_status.job_status %>
+</p>
+
+<p>
+  <strong>Status date:</strong>
+  <%= @work_order_status.status_date %>
+</p>
+
+<p>
+  <strong>Reason code:</strong>
+  <%= @work_order_status.reason_code %>
+</p>
+
+<p>
+  <strong>Reason code description:</strong>
+  <%= @work_order_status.reason_code_description %>
+</p>
+
+<p>
+  <strong>Work order:</strong>
+  <%= @work_order_status.work_order %>
+</p>
+
+<%= link_to 'Edit', edit_work_order_status_path(@work_order_status) %> |
+<%= link_to 'Back', work_order_statuses_path %>

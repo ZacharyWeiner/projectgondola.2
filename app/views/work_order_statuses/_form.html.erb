@@ -1,0 +1,18 @@
+<%= simple_form_for(@work_order_status) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :partition_id %>
+    <%= f.input :jobstatus %>
+    <%= f.input :sub_status %>
+    <%= f.input :job_status %>
+    <%= f.input :status_date %>
+    <%= f.input :reason_code %>
+    <%= f.input :reason_code_description %>
+    <%= f.association :work_order %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
