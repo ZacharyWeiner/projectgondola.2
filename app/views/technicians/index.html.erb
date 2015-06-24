@@ -1,0 +1,41 @@
+<h1>Listing technicians</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mso tech</th>
+      <th>Last background check</th>
+      <th>Gchat</th>
+      <th>Is active</th>
+      <th>Home phone</th>
+      <th>Cell phone</th>
+      <th>Last drug test</th>
+      <th>Internal tech</th>
+      <th>Company info</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @technicians.each do |technician| %>
+      <tr>
+        <td><%= technician.mso_tech_id %></td>
+        <td><%= technician.last_background_check %></td>
+        <td><%= technician.gchat_id %></td>
+        <td><%= technician.is_active %></td>
+        <td><%= technician.home_phone %></td>
+        <td><%= technician.cell_phone %></td>
+        <td><%= technician.last_drug_test %></td>
+        <td><%= technician.internal_tech_id %></td>
+        <td><%= technician.company_info %></td>
+        <td><%= link_to 'Show', technician %></td>
+        <td><%= link_to 'Edit', edit_technician_path(technician) %></td>
+        <td><%= link_to 'Destroy', technician, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Technician', new_technician_path %>

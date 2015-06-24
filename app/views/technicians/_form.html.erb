@@ -1,0 +1,19 @@
+<%= simple_form_for(@technician) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :mso_tech_id %>
+    <%= f.input :last_background_check %>
+    <%= f.input :gchat_id %>
+    <%= f.input :is_active %>
+    <%= f.input :home_phone %>
+    <%= f.input :cell_phone %>
+    <%= f.input :last_drug_test %>
+    <%= f.input :internal_tech_id %>
+    <%= f.association :company_info %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
