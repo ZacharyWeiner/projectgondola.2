@@ -1,4 +1,5 @@
 ActiveAdmin.register Address do
+  permit_params :street_number, :street_name, :unit, :address_type, :city, :state, :zip, :full_street_address, :map_grid, :latitude, :longitude
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
