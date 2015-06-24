@@ -1,0 +1,19 @@
+<%= simple_form_for(@drivers_licesnse) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :technician %>
+    <%= f.input :license_id %>
+    <%= f.input :height %>
+    <%= f.input :weight %>
+    <%= f.input :eye_color %>
+    <%= f.input :birthday %>
+    <%= f.input :hair_color %>
+    <%= f.input :state %>
+    <%= f.input :expiration %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

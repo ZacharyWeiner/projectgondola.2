@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :drivers_licesnses
+
   resources :work_order_details
 
   resources :time_slots
