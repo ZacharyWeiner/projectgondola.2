@@ -1,0 +1,157 @@
+<h1>Listing work_order_details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Smsid</th>
+      <th>Buid</th>
+      <th>Sms</th>
+      <th>Contact phone number</th>
+      <th>Business unit</th>
+      <th>Versionid</th>
+      <th>Tzi</th>
+      <th>Fsruserid</th>
+      <th>Fsrbuid</th>
+      <th>Previous fsr buid</th>
+      <th>Dispatcher</th>
+      <th>Key1</th>
+      <th>Problem code</th>
+      <th>Key2</th>
+      <th>Order date time</th>
+      <th>Due date time</th>
+      <th>Jobtype</th>
+      <th>Jobclass</th>
+      <th>Tech completed</th>
+      <th>Last changed</th>
+      <th>Compliance</th>
+      <th>Customer id2</th>
+      <th>Pricing category</th>
+      <th>Pricing category description</th>
+      <th>Campaign code</th>
+      <th>Campaign code description</th>
+      <th>Customer status</th>
+      <th>Customer status description</th>
+      <th>Customer info1</th>
+      <th>Customer info2</th>
+      <th>Customer info3</th>
+      <th>Customer info4</th>
+      <th>Customer info5</th>
+      <th>Building type</th>
+      <th>Building type description</th>
+      <th>Deliminated address</th>
+      <th>Coding quality</th>
+      <th>Location</th>
+      <th>Location info1</th>
+      <th>Location info2</th>
+      <th>Location info3</th>
+      <th>Location info4</th>
+      <th>Location info5</th>
+      <th>Monthly charge</th>
+      <th>Job points</th>
+      <th>Total bablace due</th>
+      <th>Ordering operator</th>
+      <th>Contact name</th>
+      <th>Contact phone1</th>
+      <th>Contact phone2</th>
+      <th>Drop location</th>
+      <th>Tag</th>
+      <th>House status</th>
+      <th>Quota group</th>
+      <th>Quota area</th>
+      <th>Detail text1</th>
+      <th>Detail text2</th>
+      <th>Detail text3</th>
+      <th>Detail text4</th>
+      <th>Detail text5</th>
+      <th>Sms job number</th>
+      <th>Assigning operator</th>
+      <th>Repeat</th>
+      <th>Repeat count</th>
+      <th>Node</th>
+      <th>Tech business unit</th>
+      <th>Work order</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @work_order_details.each do |work_order_detail| %>
+      <tr>
+        <td><%= work_order_detail.smsid %></td>
+        <td><%= work_order_detail.buid %></td>
+        <td><%= work_order_detail.sms %></td>
+        <td><%= work_order_detail.contact_phone_number %></td>
+        <td><%= work_order_detail.business_unit %></td>
+        <td><%= work_order_detail.versionid %></td>
+        <td><%= work_order_detail.tzi %></td>
+        <td><%= work_order_detail.fsruserid %></td>
+        <td><%= work_order_detail.fsrbuid %></td>
+        <td><%= work_order_detail.previous_fsr_buid %></td>
+        <td><%= work_order_detail.dispatcher_id %></td>
+        <td><%= work_order_detail.key1 %></td>
+        <td><%= work_order_detail.problem_code %></td>
+        <td><%= work_order_detail.key2 %></td>
+        <td><%= work_order_detail.order_date_time %></td>
+        <td><%= work_order_detail.due_date_time %></td>
+        <td><%= work_order_detail.jobtype %></td>
+        <td><%= work_order_detail.jobclass %></td>
+        <td><%= work_order_detail.tech_completed %></td>
+        <td><%= work_order_detail.last_changed %></td>
+        <td><%= work_order_detail.compliance %></td>
+        <td><%= work_order_detail.customer_id2 %></td>
+        <td><%= work_order_detail.pricing_category %></td>
+        <td><%= work_order_detail.pricing_category_description %></td>
+        <td><%= work_order_detail.campaign_code %></td>
+        <td><%= work_order_detail.campaign_code_description %></td>
+        <td><%= work_order_detail.customer_status %></td>
+        <td><%= work_order_detail.customer_status_description %></td>
+        <td><%= work_order_detail.customer_info1 %></td>
+        <td><%= work_order_detail.customer_info2 %></td>
+        <td><%= work_order_detail.customer_info3 %></td>
+        <td><%= work_order_detail.customer_info4 %></td>
+        <td><%= work_order_detail.customer_info5 %></td>
+        <td><%= work_order_detail.building_type %></td>
+        <td><%= work_order_detail.building_type_description %></td>
+        <td><%= work_order_detail.deliminated_address %></td>
+        <td><%= work_order_detail.coding_quality %></td>
+        <td><%= work_order_detail.location_id %></td>
+        <td><%= work_order_detail.location_info1 %></td>
+        <td><%= work_order_detail.location_info2 %></td>
+        <td><%= work_order_detail.location_info3 %></td>
+        <td><%= work_order_detail.location_info4 %></td>
+        <td><%= work_order_detail.location_info5 %></td>
+        <td><%= work_order_detail.monthly_charge %></td>
+        <td><%= work_order_detail.job_points %></td>
+        <td><%= work_order_detail.total_bablace_due %></td>
+        <td><%= work_order_detail.ordering_operator_id %></td>
+        <td><%= work_order_detail.contact_name %></td>
+        <td><%= work_order_detail.contact_phone1 %></td>
+        <td><%= work_order_detail.contact_phone2 %></td>
+        <td><%= work_order_detail.drop_location %></td>
+        <td><%= work_order_detail.tag_id %></td>
+        <td><%= work_order_detail.house_status %></td>
+        <td><%= work_order_detail.quota_group %></td>
+        <td><%= work_order_detail.quota_area %></td>
+        <td><%= work_order_detail.detail_text1 %></td>
+        <td><%= work_order_detail.detail_text2 %></td>
+        <td><%= work_order_detail.detail_text3 %></td>
+        <td><%= work_order_detail.detail_text4 %></td>
+        <td><%= work_order_detail.detail_text5 %></td>
+        <td><%= work_order_detail.sms_job_number %></td>
+        <td><%= work_order_detail.assigning_operator_id %></td>
+        <td><%= work_order_detail.repeat %></td>
+        <td><%= work_order_detail.repeat_count %></td>
+        <td><%= work_order_detail.node_id %></td>
+        <td><%= work_order_detail.tech_business_unit %></td>
+        <td><%= work_order_detail.work_order %></td>
+        <td><%= link_to 'Show', work_order_detail %></td>
+        <td><%= link_to 'Edit', edit_work_order_detail_path(work_order_detail) %></td>
+        <td><%= link_to 'Destroy', work_order_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Work order detail', new_work_order_detail_path %>
