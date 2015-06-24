@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :emergency_contacts
+
   resources :work_orders
 
   resources :addresses
