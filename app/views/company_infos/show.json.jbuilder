@@ -1,0 +1,1 @@
+json.extract! @company_info, :id, :name, :contract_date, :liability_insurance_date, :liability_insurance_company, :liability_insurance_policy_number, :workers_comp_company, :workers_comp_policy_number, :business_registrataion_expiration, :annual_filing_date, :created_at, :updated_at

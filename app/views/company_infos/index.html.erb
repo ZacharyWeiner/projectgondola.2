@@ -1,0 +1,41 @@
+<h1>Listing company_infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Contract date</th>
+      <th>Liability insurance date</th>
+      <th>Liability insurance company</th>
+      <th>Liability insurance policy number</th>
+      <th>Workers comp company</th>
+      <th>Workers comp policy number</th>
+      <th>Business registrataion expiration</th>
+      <th>Annual filing date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @company_infos.each do |company_info| %>
+      <tr>
+        <td><%= company_info.name %></td>
+        <td><%= company_info.contract_date %></td>
+        <td><%= company_info.liability_insurance_date %></td>
+        <td><%= company_info.liability_insurance_company %></td>
+        <td><%= company_info.liability_insurance_policy_number %></td>
+        <td><%= company_info.workers_comp_company %></td>
+        <td><%= company_info.workers_comp_policy_number %></td>
+        <td><%= company_info.business_registrataion_expiration %></td>
+        <td><%= company_info.annual_filing_date %></td>
+        <td><%= link_to 'Show', company_info %></td>
+        <td><%= link_to 'Edit', edit_company_info_path(company_info) %></td>
+        <td><%= link_to 'Destroy', company_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Company info', new_company_info_path %>

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @company_info.name %>
+</p>
+
+<p>
+  <strong>Contract date:</strong>
+  <%= @company_info.contract_date %>
+</p>
+
+<p>
+  <strong>Liability insurance date:</strong>
+  <%= @company_info.liability_insurance_date %>
+</p>
+
+<p>
+  <strong>Liability insurance company:</strong>
+  <%= @company_info.liability_insurance_company %>
+</p>
+
+<p>
+  <strong>Liability insurance policy number:</strong>
+  <%= @company_info.liability_insurance_policy_number %>
+</p>
+
+<p>
+  <strong>Workers comp company:</strong>
+  <%= @company_info.workers_comp_company %>
+</p>
+
+<p>
+  <strong>Workers comp policy number:</strong>
+  <%= @company_info.workers_comp_policy_number %>
+</p>
+
+<p>
+  <strong>Business registrataion expiration:</strong>
+  <%= @company_info.business_registrataion_expiration %>
+</p>
+
+<p>
+  <strong>Annual filing date:</strong>
+  <%= @company_info.annual_filing_date %>
+</p>
+
+<%= link_to 'Edit', edit_company_info_path(@company_info) %> |
+<%= link_to 'Back', company_infos_path %>

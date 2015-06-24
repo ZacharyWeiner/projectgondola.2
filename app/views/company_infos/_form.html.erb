@@ -1,0 +1,19 @@
+<%= simple_form_for(@company_info) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :contract_date %>
+    <%= f.input :liability_insurance_date %>
+    <%= f.input :liability_insurance_company %>
+    <%= f.input :liability_insurance_policy_number %>
+    <%= f.input :workers_comp_company %>
+    <%= f.input :workers_comp_policy_number %>
+    <%= f.input :business_registrataion_expiration %>
+    <%= f.input :annual_filing_date %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
